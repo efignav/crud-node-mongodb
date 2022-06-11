@@ -1,0 +1,25 @@
+{{! <h1>Hello world</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facilis a
+     minus quidem, consequuntur, veritatis, itaque aperiam modi odit neque rerum! Perferendis, laudantium minima! Voluptate iusto molestias quidem illum iste.
+</p> }}
+
+<form action="/tasks/add" method="POST">
+  <div>
+
+    <label for="title">Write a title</label>
+    <input type="text" name="title" placeholder="Title" />
+  </div>
+
+  <div>
+    <label for="description">Decription</label>
+    <textarea
+      name="description"
+      placeholder="description"
+      id=""
+      cols="24"
+      rows="3"
+    ></textarea>
+
+  </div>
+  <button>Add</button>
+</form>
