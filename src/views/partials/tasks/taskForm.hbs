@@ -3,23 +3,32 @@
      minus quidem, consequuntur, veritatis, itaque aperiam modi odit neque rerum! Perferendis, laudantium minima! Voluptate iusto molestias quidem illum iste.
 </p> }}
 
-<form action="/tasks/add" method="POST">
-  <div>
+<div class="card card-body text-white rouded-0 bg-dark">
+  <h3>Add a Task</h3>
+  <form action="/tasks/add" method="POST">
+    <div>
+      <label for="title">Write a title</label>
+      <input
+        type="text"
+        name="title"
+        placeholder="Title"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
 
-    <label for="title">Write a title</label>
-    <input type="text" name="title" placeholder="Title" />
-  </div>
+    <div>
+      <label for="description">Description</label>
+      <textarea
+        name="description"
+        placeholder="description"
+        id=""
+        cols="24"
+        rows="3"
+        class="form-control rounded-0 bg-dark text-white"
+      ></textarea>
 
-  <div>
-    <label for="description">Decription</label>
-    <textarea
-      name="description"
-      placeholder="description"
-      id=""
-      cols="24"
-      rows="3"
-    ></textarea>
+    </div>
+    <button class="btn btn-primary btn-sm mt-2">Add</button>
+  </form>
 
-  </div>
-  <button>Add</button>
-</form>
+</div>
